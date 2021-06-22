@@ -1260,7 +1260,7 @@ function baseCreateRenderer(
       }
     }
   }
-
+  // XXX
   const processComponent = (
     n1: VNode | null,
     n2: VNode,
@@ -1408,7 +1408,7 @@ function baseCreateRenderer(
       instance.vnode = n2
     }
   }
-
+  // XXX
   const setupRenderEffect: SetupRenderEffectFn = (
     instance,
     initialVNode,

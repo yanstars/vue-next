@@ -21,7 +21,8 @@ const { fuzzyMatchTarget } = require('./utils')
 const args = require('minimist')(process.argv.slice(2))
 const target = args._.length ? fuzzyMatchTarget(args._)[0] : 'vue'
 const formats = args.formats || args.f
-const sourceMap = args.sourcemap || args.s
+// const sourceMap = args.sourcemap || args.s || true
+const sourceMap = true
 const commit = execa.sync('git', ['rev-parse', 'HEAD']).stdout.slice(0, 7)
 
 execa(

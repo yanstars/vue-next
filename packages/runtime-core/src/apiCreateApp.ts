@@ -176,6 +176,7 @@ export function createAppAPI<HostElement>(
       __DEV__ && warn(`root props passed to app.mount() must be an object.`)
       rootProps = null
     }
+    // XXX
 
     const context = createAppContext()
     const installedPlugins = new Set()
